@@ -9,7 +9,7 @@ node {
         app = docker.build('pemarini/example-app')
     }
 
-    state('Test'){
+    stage('Test'){
         app.inside {
             sh 'npm test'
         }
