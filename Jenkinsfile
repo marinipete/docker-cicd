@@ -6,7 +6,7 @@ node {
     }
 
     stage('Build image'){
-        app = docker.build('pemarini/example-app')
+        app = docker.build('pemarini/docker-cicd')
     }
 
     stage('Test'){
